@@ -1,0 +1,1 @@
+test<?php /**PATH E:\laragon\www\tdetehhth\resources\views/welcome.blade.php ENDPATH**/ ?>

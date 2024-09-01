@@ -18,7 +18,7 @@
                  <thead class="custom_thead">
                     <th>مسلسل</th>
                     <th>اسم الفئة</th>
-                    <th>هل رئيسية</th>
+                    <th>صورة الفئة</th>
                     <th>حالة التفعيل</th>
                     <th></th>
                  </thead>
@@ -27,7 +27,7 @@
                     <tr>
                        <td>{{ $i }}</td>
                        <td>{{ $info->name }}</td>
-                       <td>@if($info->is_master==0) رئيسية @else {{ $info->is_master }} @endif</td>
+                       <td><img class="custom_img" src="{{ asset('/uploads/ItemCategorie').'/'.$info->image}}"  alt="صورة الخلفية"> </td>
                        <td>@if($info->active==1) مفعل @else معطل @endif</td>
                        <td>
                           <a href="#" wire:click.prevent="$dispatch('EditModel', { id: {{ $info->id }} })" class="btn btn-sm  btn-primary">تعديل</a>   

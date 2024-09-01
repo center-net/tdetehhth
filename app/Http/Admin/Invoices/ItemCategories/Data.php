@@ -15,7 +15,6 @@ class Data extends Component
     {
         return view('admin.invoices.item-categories.data',[
             'data'=> ItemCategorie::where('name','like','%'.$this->search.'%')->paginate(10),
-            'mains'=> ItemCategorie::where('is_master','1')->get(),
         ]);
     }
 }
